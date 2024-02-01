@@ -1,0 +1,335 @@
+.dashboard {
+  background-color: #f5f5f5;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1320px;
+    height: 80px;
+
+    .global-search {
+      padding-top: 20px;
+      margin-left: 20px;
+      width: 400px;
+
+      .q-field__control {
+        width: 400px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid black;
+      }
+
+      .gl-search {
+        height: 40px;
+        font-size: 20px;
+        padding-bottom: 15px;
+      }
+    }
+
+    .notification_bell {
+      margin-left: 1050px;
+      font-size: 40px;
+    }
+
+    .person_profile {
+      margin-left: 20px;
+      font-size: 50px;
+    }
+  }
+
+  .bottom-icon {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 1;
+  }
+
+  .menu-container {
+    margin-top: 25px;
+    margin-left: 15px;
+    padding: 30px;
+    height: 100vh;
+    width: 290px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: background-color 0.5s ease;
+
+    .menu-item {
+      display: inline;
+      align-items: center;
+    }
+
+    .material-icons-outlined {
+      font-size: 20px;
+      font-family: "Material Icons";
+    }
+
+    .text-section {
+      font-size: 12px;
+    }
+
+    #menu-title {
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .full-width-hover {
+      width: 130px;
+    }
+  }
+
+  // CardDash.vue
+  .dashboard-outputcontainer1 {
+    position: absolute;
+    padding: 12px;
+    padding-left: 20px;
+    min-height: 968px;
+    min-width: 1384px;
+    /*sets to balance the output container min-width: 1384px; */
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.1);
+    transition: background-color 0.5s ease;
+
+    .table-title {
+      padding-left: 15px;
+      font-size: 20px;
+      color: rgb(36, 153, 144);
+    }
+
+    .my-card {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  //ActivityLogs.vue
+  .dashboard-outputcontainer2 {
+    position: absolute;
+    padding: 12px;
+    padding-left: 20px;
+    min-height: 968px;
+    min-width: 1384px; /*sets to balance the output container */
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.1);
+    transition: background-color 0.5s ease;
+
+    .top-pos {
+      display: flex;
+      align-items: center;
+
+      .download-box {
+        text-align: center;
+        background-color: rgb(36, 153, 144);
+        width: 150px;
+        height: 32px;
+        margin-left: 750px;
+        border-radius: 20px;
+        padding: 5px;
+        cursor: pointer;
+
+        .download-icon {
+          font-size: 20px;
+          color: rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        label {
+          padding: 10px;
+          font-size: 13px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .searchinput {
+        margin-left: 10px;
+        max-width: 300px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        font-size: 13px;
+        padding: 5px 30px 5px 20px;
+      }
+
+      .searchinput .q-field__prepend {
+        color: grey;
+      }
+
+      .q-field__control {
+        border: 1px solid black;
+        position: initial !important;
+        border-radius: 50px !important;
+        max-height: 50px;
+        padding: 1px 10px 5px 10px;
+      }
+    }
+
+    .custom-date-input {
+      width: 230px;
+      height: 5px;
+      font-size: 11px; /* Adjust the font size as needed */
+      margin-bottom: 20px;
+
+      .q-field__control {
+        width: 200px; /* Adjust the width as needed */
+        height: 40px; /* Adjust the height as needed */
+      }
+
+      .cursor-pointer {
+        font-size: 20px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    .custom-date-input .q-field__bottom {
+      display: none;
+      padding-bottom: 10px;
+    }
+
+    .my-table {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      margin: 2px;
+      width: 1320px;
+
+      .my-table .q-th,
+      .my-table .q-tr {
+        box-sizing: border-box;
+      }
+
+      .my-table .q-th {
+        height: 56px;
+      }
+      .my-table .q-tr {
+        height: 148px;
+      }
+
+      .calendar-decoration {
+        display: flex;
+        align-items: center;
+      }
+
+      .calendar-icon {
+        font-size: 10px;
+        color: #3a2b2b;
+      }
+
+      .custom-date-input {
+        border-radius: 15px;
+        background-color: #e0e0e0;
+      }
+
+      .q-btn {
+        padding: 4px 8px;
+      }
+    }
+
+    .table-title {
+      padding-left: 8px;
+      font-size: 20px;
+      color: rgb(36, 153, 144);
+    }
+
+    .q-pa-md {
+      display: flex;
+      align-items: center;
+
+      .Pagefilter {
+        width: 200px;
+        border-radius: 100px;
+        margin-right: 10px;
+      }
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  //ProfileDetails.vue
+  .dashboard-outputcontainer3 {
+    position: absolute;
+    padding: 12px;
+    padding-left: 20px;
+    min-height: 968px;
+    min-width: 1384px; /*sets to balance the output container */
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.1);
+    transition: background-color 0.5s ease;
+
+    .header {
+      position: flex;
+      top: 0; /* Position it at the top of the first-div */
+      left: 0;
+      width: 100%; /* Make it full-width */
+      height: 28px;
+    }
+
+    .Arrow_SPD {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+
+      .arrow_back {
+        font-size: 20px;
+      }
+
+      .SPD {
+        margin-left: 10px;
+        font-size: 19px;
+        font-weight: bold;
+        color: rgb(36, 153, 144);
+      }
+    }
+
+    .header1 {
+      height: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    input,
+    textarea {
+      width: 456px;
+      height: 48px;
+      padding: 8px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .box {
+      text-align: left;
+      margin: 0 auto;
+      padding: 10px;
+      width: 480px;
+      height: 820px;
+      outline: none !important;
+    }
+
+    .form-group {
+      outline: none !important;
+    }
+
+    .btn {
+      background-color: rgb(36, 153, 144);
+      font-size: 11px;
+      width: 120px;
+      color: white;
+      padding: 7px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+}
